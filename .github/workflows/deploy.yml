@@ -22,6 +22,7 @@ jobs:
         run: |
           git submodule update --init
           mv IntroSC/PDEs/*.ipynb content
+          mv IntroSC/PDEs/*.png content          
           rm -rf IntroSC
           python -m pip install -r requirements.txt
       - name: Build the JupyterLite site
